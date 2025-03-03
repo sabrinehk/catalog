@@ -9,7 +9,6 @@ import { PlayCircle } from "@mui/icons-material";
 
 import Btn from "@/Shared/Btn";
 
-
 const Catalog = () => {
   const [state, setState] = useState("closed");
   useEffect(() => {
@@ -42,7 +41,9 @@ const Catalog = () => {
       dir="ltr"
       className="bg-gray-900 flex justify-center items-center flex-col h-screen w-screen overflow-hidden"
     >
-      <div className="header text-xs opacity-50 !text-white">Click on catalog</div>
+      <div className="header text-xs opacity-50 !text-white">
+        Click on catalog
+      </div>
       <div className="container" id="one" onClick={handleClick}>
         <div className="left-side">
           <div className="front">
@@ -67,8 +68,8 @@ const Catalog = () => {
         <div className="center">
           <div className="center-content content">
             <Image
-                src={""}
-                alt="pic"
+              src={""}
+              alt="pic"
               className="!w-full !h-full object-contain"
             />
           </div>

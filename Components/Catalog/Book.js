@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import HTMLFlipBook from "react-pageflip";
 
-
 import {
   KeyboardDoubleArrowLeft,
   KeyboardDoubleArrowRight,
@@ -53,8 +52,7 @@ const Book = () => {
           {["", "", "", "", ""].map((pic, index) => (
             <div key={index} className="demoPage">
               <Image
-                              src={""}
-
+                src={""}
                 alt={`Page ${index + 1}`}
                 className="w-full h-full object-contain"
               />
