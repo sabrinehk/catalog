@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --color-1: orange;
+  --color-2: #105fef;
+  --grey-1: #1F1F1F;
+  --grey-2: #bbb;
+  --grey-3: #ccc;
+  --font-1: "Roboto", sans-serif;
+}
+
+.header {
+  font-family: "iransans", Arial, sans-serif;
+  text-align: center;
+  color: var(--grey-1);
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  margin: 0px auto;
+  background-color: transparent;
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  perspective: 1000px;
+  font-family: "iransans", Arial, sans-serif;
+}
+
+.center {
+  background: white;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0px 0px 20px #bbb;
+  overflow: hidden;
+}
+
+.left-side,
+.right-side {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  display: inline-block;
+  background: white;
+  height: 100%;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.front {
+  color: black;
+}
+
+.back {
+  color: black;
+  background: white;
+  transform: rotateY(180deg);
+}
+
+.left-side {
+  transform-origin: right;
+  transform: rotateY(180deg);
+}
+
+.right-side {
+  transform-origin: left;
+  transform: rotateY(-180deg);
+}
+
+.right-side .back {
+  overflow: hidden;
+}
+
+.right-side .content {
+  position: relative;
+}
+
+.right-side .right-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 30% 90%, 0 50%);
+}
+
+.right-side .back .bottom {
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  clip-path: polygon(0 0, 100% 45%, 100% 100%, 0 100%);
+  padding-left: 8px;
+  padding-top: 40%;
+  text-align: left;
+  font-weight: 900;
+}
+
+.right-side .back .text {
+  color: var(--grey-1);
+  font-size: 25px;
+}
+
+.right-side .back .highlight {
+  color: var(--color-1);
+  font-size: 30px;
+  font-style: italic;
+}
+
+.right-side .back .text:nth-child(3) {
+  width: 25%;
+  padding-bottom: 4px;
+  border-bottom: 5px solid var(--color-1);
+}
+
+.right-side .back .blurb {
+  color: var(--grey-1);
+  font-weight: 100;
+  font-size: 13px;
+  padding: 8px 0px;
+}
+
+
+.left-side .back .content {
+  background: white;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-side .back .left-image {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 50%);
+}
+
+.left-side .back .stuff {
+  height: 48%;
+  width: 70%;
+  border: 15px solid orange;
+  margin: 5%;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  text-align: left;
+  padding-top: 75%; 
+}
+
+.left-side .back .stuff div:nth-child(1) {
+  font-size: 22px;
+  color: var(--grey-1);
+}
+
+.left-side .back .stuff div:nth-child(2) {
+  font-size: 25px;
+  color: var(--color-1);
+  font-weight: 900;
+  border-bottom: 5px solid var(--grey-1);
+}
+
+.left-side .back .stuff p {
+  margin-top: 10%;
+  color: var(--grey-1);
+  font-size: 14px;
+}
+
+.left-side .front .content {
+  height: 100%;
+}
+
+.left-side .front .part-one {
+  height: 25%;
+  padding: 15px;
+}
+
+.left-side .front .part-two {
+  background: var(--grey-1);
+  padding: 22% 15px;
+  height: 100%;
+  clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0% 100%)
+}
+
+.left-side .front .part-two p {
+  color: white;
+}
+
+.left-side .front h1, .center h1 {
+  color: var(--color-1);
+  margin: 0px;
+  font-size: 15px
+}
+
+.left-side .front p, .center p {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.center .center-content {
+  height: 100%;
+  opacity: 0;
+}
+.center .part-one {
+  padding: 10px;
+  height: 39.5%;
+}
+
+.center .part-two {
+  padding: 20px;
+  height: 60%;
+  background: var(--grey-1);
+  clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+}
+
+.right-side .front {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+.right-side .front .right-image {
+  clip-path: polygon(0 0, 0 90%, 100% 58%, 100% 0);
+}
+
+.right-side .front .part-two {
+  height: 100%;
+  width: 100%;
+}
+
+.right-side .front .part-two .stuff {
+  width: 250px;
+  margin-top: -60%;
+  height: 300px;
+  background: var(--grey-1);
+  clip-path: polygon(0% 46%, 0 100%, 100% 100%, 100% 10%);
+}
+
+.right-side .front .part-two h1 {
+  padding-top: 60%;
+  margin: 0px;
+  font-size: 20px;
+  color: var(--color-1);
+}
+
+.right-side .front .part-two p {
+  color: white;
+  margin: 0px;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .container {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
