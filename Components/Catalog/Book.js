@@ -2,24 +2,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import HTMLFlipBook from "react-pageflip";
-import { useRouter } from "next/navigation";
 
-import Btn from "@/Shared/Btn";
-import pic1 from "@/public/Images/catalog/PC-350x700-03.jpg";
-import pic2 from "@/public/Images/catalog/PC-350x700-05.jpg";
-import pic3 from "@/public/Images/catalog/PC-350x700-04.jpg";
-import pic4 from "@/public/Images/catalog/PC-350x700-02.jpg";
-import pic5 from "@/public/Images/catalog/PC-350x700-01.jpg";
+
 import {
   KeyboardDoubleArrowLeft,
   KeyboardDoubleArrowRight,
-  Login,
 } from "@mui/icons-material";
 
 const Book = () => {
   const [bookSize, setBookSize] = useState({ width: 300, height: 500 });
   const bookRef = useRef(null);
-  const router = useRouter();
 
   useEffect(() => {
     const updateSize = () => {
@@ -44,7 +36,7 @@ const Book = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-900 p-2 overflow-hidden">
       <div className="mb-5 text-xs opacity-50 !text-white">
-        برای مشاهده بروشور، ورق بزنید یا کلیک کنید
+        Click or turn the page
       </div>
       <div className="w-full max-w-[90vw] relative max-h-[500px] flex justify-center items-center">
         <HTMLFlipBook
@@ -58,10 +50,11 @@ const Book = () => {
           maxHeight={500}
           startPage={4}
         >
-          {[pic2, pic1, pic3, pic4, pic5].map((pic, index) => (
+          {["", "", "", "", ""].map((pic, index) => (
             <div key={index} className="demoPage">
               <Image
-                src={pic}
+                              src={""}
+
                 alt={`Page ${index + 1}`}
                 className="w-full h-full object-contain"
               />
@@ -85,21 +78,6 @@ const Book = () => {
           <KeyboardDoubleArrowLeft />
         </button>
       </div>
-
-      <Btn
-        text={
-          <div className="flex gap-2">
-            دریافت سرویس
-            <Login />
-          </div>
-        }
-        onClick={() => {
-          router.push(
-            "https://www.shatel.ir/internet-services/towers-special-services/"
-          );
-        }}
-        className="!bg-[#f26322] !mt-5"
-      />
     </div>
   );
 };

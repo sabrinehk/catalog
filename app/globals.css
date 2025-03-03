@@ -1,2 +1,60 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
+
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('/fonts/iransans/iransans.woff2') format('woff2'),
+       url('/fonts/iransans/iransans.woff') format('woff'),
+       url('/fonts/iransans/iransans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'IranSans', sans-serif;
+}
+
+a:hover{
+  color: #f26322;
+}
+
+
+.SectionContainer {
+  height: 100vh !important;
+}
+
+.fullpage-section {
+  height: 100vh !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d3d3d3;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00305f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00305f;
+}
+
+.png{
+  display: block !important;
+}
+
 

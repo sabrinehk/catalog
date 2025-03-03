@@ -3,10 +3,9 @@ import MainCatalog from "@/components/Catalog/MainCatalog.js";
 
 export const generateMetadata = () => {
   return {
-    title: "کاتالوگ",
-    description: "کاتالوگ شاتل",
-    keywords: "کاتالوگ شاتل",
-    robots: "noindex, nofollow", // Add noindex, nofollow
+    title: "Catalog",
+    description: "Catalog",
+    keywords: "Catalog",
   };
 };
 const page = () => {

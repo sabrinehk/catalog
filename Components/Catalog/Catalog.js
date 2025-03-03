@@ -2,21 +2,15 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 import gsap from "gsap";
 import "./catalog.css";
-import { Login, PlayCircle } from "@mui/icons-material";
+import { PlayCircle } from "@mui/icons-material";
 
 import Btn from "@/Shared/Btn";
-import pic1 from "@/public/Images/catalog/PC-350x700-03.jpg";
-import pic2 from "@/public/Images/catalog/PC-350x700-05.jpg";
-import pic3 from "@/public/Images/catalog/PC-350x700-04.jpg";
-import pic4 from "@/public/Images/catalog/PC-350x700-02.jpg";
-import pic5 from "@/public/Images/catalog/PC-350x700-01.jpg";
+
 
 const Catalog = () => {
-  const router = useRouter();
   const [state, setState] = useState("closed");
   useEffect(() => {
     gsap.set(".center-content", { opacity: 0 });
@@ -48,15 +42,13 @@ const Catalog = () => {
       dir="ltr"
       className="bg-gray-900 flex justify-center items-center flex-col h-screen w-screen overflow-hidden"
     >
-      <div className="header text-xs opacity-50 !text-white">
-        برای باز شدن بروشور کلیک کنید
-      </div>
+      <div className="header text-xs opacity-50 !text-white">Click on catalog</div>
       <div className="container" id="one" onClick={handleClick}>
         <div className="left-side">
           <div className="front">
             <div className="content">
               <Image
-                src={pic2}
+                src={""}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -65,7 +57,7 @@ const Catalog = () => {
           <div className="back">
             <div className="content">
               <Image
-                src={pic1}
+                src={""}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -75,8 +67,8 @@ const Catalog = () => {
         <div className="center">
           <div className="center-content content">
             <Image
-              src={pic3}
-              alt="pic"
+                src={""}
+                alt="pic"
               className="!w-full !h-full object-contain"
             />
           </div>
@@ -85,7 +77,7 @@ const Catalog = () => {
           <div className="front">
             <div className="content">
               <Image
-                src={pic4}
+                src={""}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -94,7 +86,7 @@ const Catalog = () => {
           <div className="back">
             <div className="content">
               <Image
-                src={pic5}
+                src={""}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -107,25 +99,15 @@ const Catalog = () => {
           text={
             <div className="flex gap-2">
               <PlayCircle />
-              <div>{state === "closed" && "۱"}{state === "half" && "۲"}{state === "open" && "۳"} / ۳</div>
-              نمایش
+              <div>
+                {state === "closed" && "1"}
+                {state === "half" && "2"}
+                {state === "open" && "3"} / 3
+              </div>
+              page
             </div>
           }
           onClick={() => handleClick()}
-          className="!bg-[#f26322] !mt-5"
-        />
-        <Btn
-          text={
-            <div className="flex gap-2">
-              <Login />
-              دریافت سرویس
-            </div>
-          }
-          onClick={() => {
-            router.push(
-              "https://www.shatel.ir/internet-services/towers-special-services/"
-            );
-          }}
           className="!bg-[#f26322] !mt-5"
         />
       </div>
