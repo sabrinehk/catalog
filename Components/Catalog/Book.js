@@ -8,6 +8,12 @@ import {
   KeyboardDoubleArrowRight,
 } from "@mui/icons-material";
 
+import image4 from "@/public/Images/catalog/4.jpg";
+import image2 from "@/public/Images/catalog/2.jpg";
+import image5 from "@/public/Images/catalog/5.jpg";
+import image6 from "@/public/Images/catalog/6.jpg";
+import image3 from "@/public/Images/catalog/3.jpg";
+
 const Book = () => {
   const [bookSize, setBookSize] = useState({ width: 300, height: 500 });
   const bookRef = useRef(null);
@@ -49,10 +55,10 @@ const Book = () => {
           maxHeight={500}
           startPage={4}
         >
-          {["", "", "", "", ""].map((pic, index) => (
+          {[image2, image4, image5, image6, image3].map((pic, index) => (
             <div key={index} className="demoPage">
               <Image
-                src={""}
+                src={pic}
                 alt={`Page ${index + 1}`}
                 className="w-full h-full object-contain"
               />

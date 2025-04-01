@@ -9,6 +9,12 @@ import { PlayCircle } from "@mui/icons-material";
 
 import Btn from "@/Shared/Btn";
 
+import image4 from "@/public/Images/catalog/4.jpg";
+import image2 from "@/public/Images/catalog/2.jpg";
+import image5 from "@/public/Images/catalog/5.jpg";
+import image6 from "@/public/Images/catalog/6.jpg";
+import image3 from "@/public/Images/catalog/3.jpg";
+
 const Catalog = () => {
   const [state, setState] = useState("closed");
   useEffect(() => {
@@ -49,7 +55,7 @@ const Catalog = () => {
           <div className="front">
             <div className="content">
               <Image
-                src={""}
+                src={image4}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -58,7 +64,7 @@ const Catalog = () => {
           <div className="back">
             <div className="content">
               <Image
-                src={""}
+                src={image2}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -68,7 +74,7 @@ const Catalog = () => {
         <div className="center">
           <div className="center-content content">
             <Image
-              src={""}
+              src={image5}
               alt="pic"
               className="!w-full !h-full object-contain"
             />
@@ -78,7 +84,7 @@ const Catalog = () => {
           <div className="front">
             <div className="content">
               <Image
-                src={""}
+                src={image6}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -87,7 +93,7 @@ const Catalog = () => {
           <div className="back">
             <div className="content">
               <Image
-                src={""}
+                src={image3}
                 alt="pic"
                 className="!w-full !h-full object-contain"
               />
@@ -109,7 +115,7 @@ const Catalog = () => {
             </div>
           }
           onClick={() => handleClick()}
-          className="!bg-[#f26322] !mt-5"
+          className=" !mt-5"
         />
       </div>
     </div>
