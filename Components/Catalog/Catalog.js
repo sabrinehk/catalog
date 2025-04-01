@@ -101,7 +101,7 @@ const Catalog = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center justify-center">
         <Btn
           text={
             <div className="flex gap-2">

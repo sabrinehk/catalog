@@ -6,7 +6,7 @@ const Btn = ({ text , onClick = () => {}, disable = false, className="" }) => {
     <Button
       variant="contained"
       disabled={disable}
-      className={`!bg-[#00305f] md:!text-sm text-xs !rounded-full min-w-fit max-w-full ${className && className}`}
+      className={`!bg-[#00305f] md:!text-sm text-xs flex justify-center items-center !rounded-full min-w-fit max-w-full ${className && className}`}
       onClick={onClick}
       sx={{
         fontFamily: "'IranSans', sans-serif", // Apply the custom font here
