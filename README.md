@@ -11,8 +11,7 @@ Watch the demo on here:
 ## 🎥 Demo Video
 
 Watch the demo video here:  
-👉 [Demo Video Link](#)  
-_(Replace with your YouTube or video hosting link)_
+👉 (https://youtube.com/shorts/U9WUZwvPSTE?feature=share)
 
 ## ✨ Features
 
