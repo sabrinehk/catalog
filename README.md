@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📖 Digital Catalog with Next.js
 
-## Getting Started
+This is a responsive digital catalog built with **Next.js**.  
+It features a **5-panel brochure layout** on desktop and a **book-style flipping experience** on mobile and tablet devices.
 
-First, run the development server:
+## 🎥 Demo 
+
+Watch the demo on here:  
+(https://www.sabrineh.ir/projects/catalog)
+
+## 🎥 Demo Video
+
+Watch the demo video here:  
+👉 [Demo Video Link](#)  
+_(Replace with your YouTube or video hosting link)_
+
+## ✨ Features
+
+- ⚛️ Built with **Next.js** (React framework)
+- 📱 **Responsive design**:  
+  - On **desktop**, it displays as a **5-leaf spread layout**  
+  - On **mobile/tablet**, it mimics a **book-style flip animation**
+- 💨 Smooth transitions and interactions
+- 📖 Perfect for digital brochures, product catalogs, and interactive books
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/sabrinehk/catalog.git
+cd catalog
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠 Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [CSS/SCSS or Tailwind (if used)](https://tailwindcss.com/)
 
-## Learn More
+## 📁 Folder Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+/app         → Main routing and layout
+/components    → Reusable UI components
+/public        → Static assets (images, videos, etc.)
+/styles        → Global and modular styles
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Designed with user experience in mind for both desktop and mobile users
+- You can customize the pages or catalog items as needed
+- Make sure to add your own assets in the `/public` folder
 
-## Deploy on Vercel
+## 🧑‍💻 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Made with ❤️ by Sabrineh (https://sabrineh.ir)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+Feel free to ⭐️ the repository if you found it useful!
+```
+
+---
